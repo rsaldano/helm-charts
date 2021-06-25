@@ -135,7 +135,7 @@ sentinelConfig: |
 
 ## Test of adding auth
 authentication:
-  password: change-me
+  password: changeMe
 
 ## High availability mode (with master-slave replication and sentinel)
 haMode:
