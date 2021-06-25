@@ -133,6 +133,10 @@ redisConfig: |
 ## Additional sentinel.conf (only when haMode is enabled)
 sentinelConfig: |
 
+## Test of adding auth
+authentication:
+  password: change-me
+
 ## High availability mode (with master-slave replication and sentinel)
 haMode:
   ## Enable high availibility deployment mode

@@ -32,6 +32,7 @@ data:
         echo "protected-mode no" >>$REDIS_CONFIG
         echo "bind 0.0.0.0" >>$REDIS_CONFIG
         echo "dir /data" >>$REDIS_CONFIG
+        echo {{ .Values.authentication.password | quote }} >>$REDIS_CONFIG
 
   {{- if .Values.haMode.enabled }}
         if [ -z "$MASTER" ]; then
