@@ -32,7 +32,6 @@ data:
         echo "protected-mode no" >>$REDIS_CONFIG
         echo "bind 0.0.0.0" >>$REDIS_CONFIG
         echo "dir /data" >>$REDIS_CONFIG
-        echo {{ .Values.authentication.password | quote }} >>$REDIS_CONFIG
         echo "requirepass {{ .Values.authentication.password }}" >>$REDIS_CONFIG
         echo "masterauth {{ .Values.authentication.password }}" >>$REDIS_CONFIG
 
